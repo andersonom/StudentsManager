@@ -1,0 +1,9 @@
+C:\Users\arthur\Documents\visual studio 2017\Projects\StudentsManager\StudentManager.Domain\bin\Release\netcoreapp2.0\StudentManager.Domain.deps.json
+C:\Users\arthur\Documents\visual studio 2017\Projects\StudentsManager\StudentManager.Domain\bin\Release\netcoreapp2.0\StudentManager.Domain.dll
+C:\Users\arthur\Documents\visual studio 2017\Projects\StudentsManager\StudentManager.Domain\bin\Release\netcoreapp2.0\StudentManager.Domain.pdb
+C:\Users\arthur\Documents\visual studio 2017\Projects\StudentsManager\StudentManager.Domain\obj\Release\netcoreapp2.0\StudentManager.Domain.csprojResolveAssemblyReference.cache
+C:\Users\arthur\Documents\visual studio 2017\Projects\StudentsManager\StudentManager.Domain\obj\Release\netcoreapp2.0\StudentManager.Domain.csproj.CoreCompileInputs.cache
+C:\Users\arthur\Documents\visual studio 2017\Projects\StudentsManager\StudentManager.Domain\obj\Release\netcoreapp2.0\StudentManager.Domain.AssemblyInfoInputs.cache
+C:\Users\arthur\Documents\visual studio 2017\Projects\StudentsManager\StudentManager.Domain\obj\Release\netcoreapp2.0\StudentManager.Domain.AssemblyInfo.cs
+C:\Users\arthur\Documents\visual studio 2017\Projects\StudentsManager\StudentManager.Domain\obj\Release\netcoreapp2.0\StudentManager.Domain.dll
+C:\Users\arthur\Documents\visual studio 2017\Projects\StudentsManager\StudentManager.Domain\obj\Release\netcoreapp2.0\StudentManager.Domain.pdb

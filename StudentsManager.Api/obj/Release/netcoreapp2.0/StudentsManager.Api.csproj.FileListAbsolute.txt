@@ -1,0 +1,15 @@
+C:\Users\arthur\Documents\visual studio 2017\Projects\StudentsManager\StudentsManager.Api\bin\Release\netcoreapp2.0\StudentsManager.Api.deps.json
+C:\Users\arthur\Documents\visual studio 2017\Projects\StudentsManager\StudentsManager.Api\bin\Release\netcoreapp2.0\StudentsManager.Api.runtimeconfig.json
+C:\Users\arthur\Documents\visual studio 2017\Projects\StudentsManager\StudentsManager.Api\bin\Release\netcoreapp2.0\StudentsManager.Api.runtimeconfig.dev.json
+C:\Users\arthur\Documents\visual studio 2017\Projects\StudentsManager\StudentsManager.Api\bin\Release\netcoreapp2.0\StudentsManager.Api.dll
+C:\Users\arthur\Documents\visual studio 2017\Projects\StudentsManager\StudentsManager.Api\bin\Release\netcoreapp2.0\StudentsManager.Api.pdb
+C:\Users\arthur\Documents\visual studio 2017\Projects\StudentsManager\StudentsManager.Api\bin\Release\netcoreapp2.0\StudentManager.Domain.dll
+C:\Users\arthur\Documents\visual studio 2017\Projects\StudentsManager\StudentsManager.Api\bin\Release\netcoreapp2.0\StudentsManager.Data.dll
+C:\Users\arthur\Documents\visual studio 2017\Projects\StudentsManager\StudentsManager.Api\bin\Release\netcoreapp2.0\StudentsManager.Data.pdb
+C:\Users\arthur\Documents\visual studio 2017\Projects\StudentsManager\StudentsManager.Api\bin\Release\netcoreapp2.0\StudentManager.Domain.pdb
+C:\Users\arthur\Documents\visual studio 2017\Projects\StudentsManager\StudentsManager.Api\obj\Release\netcoreapp2.0\StudentsManager.Api.csprojResolveAssemblyReference.cache
+C:\Users\arthur\Documents\visual studio 2017\Projects\StudentsManager\StudentsManager.Api\obj\Release\netcoreapp2.0\StudentsManager.Api.csproj.CoreCompileInputs.cache
+C:\Users\arthur\Documents\visual studio 2017\Projects\StudentsManager\StudentsManager.Api\obj\Release\netcoreapp2.0\StudentsManager.Api.AssemblyInfoInputs.cache
+C:\Users\arthur\Documents\visual studio 2017\Projects\StudentsManager\StudentsManager.Api\obj\Release\netcoreapp2.0\StudentsManager.Api.AssemblyInfo.cs
+C:\Users\arthur\Documents\visual studio 2017\Projects\StudentsManager\StudentsManager.Api\obj\Release\netcoreapp2.0\StudentsManager.Api.dll
+C:\Users\arthur\Documents\visual studio 2017\Projects\StudentsManager\StudentsManager.Api\obj\Release\netcoreapp2.0\StudentsManager.Api.pdb
