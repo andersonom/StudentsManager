@@ -17,3 +17,14 @@ C:\Git\Samples\dotnet\core\2.0\StudentsManager\StudentManager.Domain\obj\Debug\n
 C:\Git\Samples\dotnet\core\2.0\StudentsManager\StudentManager.Domain\obj\Debug\netcoreapp2.0\StudentManager.Domain.AssemblyInfo.cs
 C:\Git\Samples\dotnet\core\2.0\StudentsManager\StudentManager.Domain\obj\Debug\netcoreapp2.0\StudentManager.Domain.dll
 C:\Git\Samples\dotnet\core\2.0\StudentsManager\StudentManager.Domain\obj\Debug\netcoreapp2.0\StudentManager.Domain.pdb
+C:\Git\StudentsManager\StudentManager.Domain\bin\Debug\netcoreapp2.0\StudentManager.Domain.deps.json
+C:\Git\StudentsManager\StudentManager.Domain\bin\Debug\netcoreapp2.0\StudentManager.Domain.dll
+C:\Git\StudentsManager\StudentManager.Domain\bin\Debug\netcoreapp2.0\StudentManager.Domain.pdb
+C:\Git\StudentsManager\StudentManager.Domain\bin\Debug\netcoreapp2.0\Newtonsoft.Json.dll
+C:\Git\StudentsManager\StudentManager.Domain\bin\Debug\netcoreapp2.0\Newtonsoft.Json.xml
+C:\Git\StudentsManager\StudentManager.Domain\obj\Debug\netcoreapp2.0\StudentManager.Domain.csprojResolveAssemblyReference.cache
+C:\Git\StudentsManager\StudentManager.Domain\obj\Debug\netcoreapp2.0\StudentManager.Domain.csproj.CoreCompileInputs.cache
+C:\Git\StudentsManager\StudentManager.Domain\obj\Debug\netcoreapp2.0\StudentManager.Domain.AssemblyInfoInputs.cache
+C:\Git\StudentsManager\StudentManager.Domain\obj\Debug\netcoreapp2.0\StudentManager.Domain.AssemblyInfo.cs
+C:\Git\StudentsManager\StudentManager.Domain\obj\Debug\netcoreapp2.0\StudentManager.Domain.dll
+C:\Git\StudentsManager\StudentManager.Domain\obj\Debug\netcoreapp2.0\StudentManager.Domain.pdb

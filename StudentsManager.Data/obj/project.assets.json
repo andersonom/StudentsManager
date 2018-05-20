@@ -2786,11 +2786,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Git\\Samples\\dotnet\\core\\2.0\\StudentsManager\\StudentsManager.Data\\StudentsManager.Data.csproj",
+      "projectUniqueName": "C:\\Git\\StudentsManager\\StudentsManager.Data\\StudentsManager.Data.csproj",
       "projectName": "StudentsManager.Data",
-      "projectPath": "C:\\Git\\Samples\\dotnet\\core\\2.0\\StudentsManager\\StudentsManager.Data\\StudentsManager.Data.csproj",
+      "projectPath": "C:\\Git\\StudentsManager\\StudentsManager.Data\\StudentsManager.Data.csproj",
       "packagesPath": "C:\\Users\\arthur\\.nuget\\packages\\",
-      "outputPath": "C:\\Git\\Samples\\dotnet\\core\\2.0\\StudentsManager\\StudentsManager.Data\\obj\\",
+      "outputPath": "C:\\Git\\StudentsManager\\StudentsManager.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
@@ -2811,8 +2811,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Git\\Samples\\dotnet\\core\\2.0\\StudentsManager\\StudentManager.Domain\\StudentManager.Domain.csproj": {
-              "projectPath": "C:\\Git\\Samples\\dotnet\\core\\2.0\\StudentsManager\\StudentManager.Domain\\StudentManager.Domain.csproj"
+            "C:\\Git\\StudentsManager\\StudentManager.Domain\\StudentManager.Domain.csproj": {
+              "projectPath": "C:\\Git\\StudentsManager\\StudentManager.Domain\\StudentManager.Domain.csproj"
             }
           }
         }
