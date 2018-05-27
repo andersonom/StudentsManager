@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentsManager.Data", "StudentsManager.Data\StudentsManager.Data.csproj", "{E2D61479-1EDB-4F81-A3B0-A92B3E2B5E8B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentManager.Domain", "StudentManager.Domain\StudentManager.Domain.csproj", "{4D6F6E8C-A843-4047-8D32-0F8D0BC01041}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentsManager.Domain", "StudentsManager.Domain\StudentsManager.Domain.csproj", "{4D6F6E8C-A843-4047-8D32-0F8D0BC01041}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentsManager.Api", "StudentsManager.Api\StudentsManager.Api.csproj", "{323FF5C0-382E-44AF-B893-CDE3FE8672B3}"
 EndProject

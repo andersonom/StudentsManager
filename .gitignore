@@ -1,12 +1,9 @@
-StudentManager.Domain/bin/
-StudentManager.Domain/obj/
+.vs/
+StudentsManager.Domain/bin/
+StudentsManager.Domain/obj/
 StudentsManager.Data/bin/
 StudentsManager.Data/obj/
 StudentsManager.Api/bin/
 StudentsManager.Api/obj/
 StudentsManager.Api/Properties/PublishProfiles/
-.vs/StudentsManager/v15/
-.vs/StudentsManager/v15/.suo
-.vs/StudentsManager/v15/Server/sqlite3/storage.ide
 StudentsManager.Api/StudentsManager.Api.csproj.user
-StudentsManager.Data/obj/Release/netcoreapp2.0/StudentsManager.Data.csprojResolveAssemblyReference.cache
