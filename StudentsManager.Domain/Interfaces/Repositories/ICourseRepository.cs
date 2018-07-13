@@ -13,6 +13,6 @@ namespace StudentManager.Domain.Interfaces.Repositories
 
         Task<PaginatedList<Course>> GetCoursesPagedAsync( int? pageSize, int? page);
 
-        Task<IEnumerable<Course>> GetCoursesAsync();
+        Task<List<Course>> GetCoursesAsync();
     }
 }

@@ -38,7 +38,7 @@ namespace StudentsManager.Data.Repositories
                     pageSize != null && pageSize > 0 ? (int)pageSize : 1);
         }
 
-        public async Task<IEnumerable<Course>> GetCoursesAsync()
+        public async Task<List<Course>> GetCoursesAsync()
         {
             return await
                    _context.Course

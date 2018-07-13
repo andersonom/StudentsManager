@@ -28,6 +28,5 @@ namespace StudentManager.Domain.Interfaces.Repositories
 
         Task Remove(int id);
 
-        void Dispose();
     }
 }

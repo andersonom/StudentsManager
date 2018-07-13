@@ -21,7 +21,7 @@ namespace StudentsManager.DataMongo.Repositories
 
         public IMongoCollection<TEntity> Get()
         {
-            return _context.database.GetCollection<TEntity>("");
+            return _context.Database.GetCollection<TEntity>("");
         }
 
         public void Add(TEntity obj)
@@ -74,14 +74,24 @@ namespace StudentsManager.DataMongo.Repositories
             throw new NotImplementedException();
         }
 
-        void IRepositoryBase<TEntity>.Dispose()
-        {
-            throw new NotImplementedException();
-        }
-
+        private bool _disposed;
         void IDisposable.Dispose()
         {
-            throw new NotImplementedException();
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!_disposed)
+            {
+                if (disposing)
+                {
+                    _context = null;
+                    // Dispose other managed resources.
+                }
+                //release unmanaged resources.
+            }
+            _disposed = true;
         }
     }
 }

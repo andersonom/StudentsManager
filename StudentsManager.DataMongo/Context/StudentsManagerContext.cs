@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Microsoft.Extensions.Configuration;
 using MongoDB.Driver;
 
 namespace StudentsManager.DataMongo.Context
@@ -10,13 +11,18 @@ namespace StudentsManager.DataMongo.Context
         public static string ConnectionString { get; set; }
         public static string DatabaseName { get; set; }
         public static bool IsSSL { get; set; }
-        public IMongoDatabase database { get; }
-        public StudentsManagerContext(string connectionString)
+        public IMongoDatabase Database { get; }
+
+
+        public StudentsManagerContext(IConfiguration configuration)
         {
-            ConnectionString = connectionString;
+            ConnectionString = configuration.GetSection("MongoConnection:ConnectionString").Value;
+            IsSSL = Convert.ToBoolean(configuration.GetSection("MongoConnection:IsSSL").Value);
+            DatabaseName = configuration.GetSection("MongoConnection:Database").Value;
+
             try
             {
-                MongoClientSettings settings = MongoClientSettings.FromUrl(new MongoUrl(ConnectionString));
+               MongoClientSettings settings = MongoClientSettings.FromUrl(new MongoUrl(ConnectionString));
 
                 if (IsSSL)
                 {
@@ -25,12 +31,12 @@ namespace StudentsManager.DataMongo.Context
 
                 var mongoClient = new MongoClient(settings);
 
-                database = mongoClient.GetDatabase(DatabaseName);
+                Database = mongoClient.GetDatabase(DatabaseName);
             }
             catch (Exception ex)
             {
-                throw new Exception("Não foi possível se conectar com o servidor.", ex);
+                throw new Exception("Error connecting to the Mongo server.", ex);
             }
-        } 
+        }
     }
 }

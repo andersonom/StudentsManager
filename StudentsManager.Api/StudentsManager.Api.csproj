@@ -22,7 +22,9 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />	
 	<DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
   </ItemGroup>
+  
   <ItemGroup>
+    <ProjectReference Include="..\StudentsManager.DataMongo\StudentsManager.DataMongo.csproj" />
     <ProjectReference Include="..\StudentsManager.Data\StudentsManager.Data.csproj" />
   </ItemGroup>
 

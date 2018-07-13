@@ -7,10 +7,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using StudentsManager.DataMongo.Context;
+using MongoDB.Driver;
 
 namespace StudentsManager.DataMongo.Repositories
 {
-    public class CourseRepository : RepositoryBase<Course> 
+    public class CourseRepository : RepositoryBase<Course>, ICourseRepository
     {
         public StudentsManagerContext _context { get; }
 
@@ -43,7 +44,8 @@ namespace StudentsManager.DataMongo.Repositories
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Course> GetCoursesAsync()
+
+        Task<List<Course>> ICourseRepository.GetCoursesAsync()
         {
             //return await
             //       _context.Course
@@ -51,10 +53,11 @@ namespace StudentsManager.DataMongo.Repositories
             //       .AsNoTracking()
             //       .AsQueryable()
             //       .ToListAsync();
+           
+                var courses = _context.Database.GetCollection<Course>("Course");
 
-            return _context.database.GetCollection<Course>("Course") as IEnumerable<Course>;
-                
+                return courses.Find(i => true).ToListAsync();
         }
-
+ 
     }
 }

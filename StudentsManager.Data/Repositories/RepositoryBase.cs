@@ -89,10 +89,25 @@ namespace StudentsManager.Data.Repositories
             //_context.Set<TEntity>().Remove(entity);
            await _context.SaveChangesAsync();
         }
-       
-        public void Dispose()
+
+        private bool _disposed;
+        void IDisposable.Dispose()
         {
-            throw new NotImplementedException();
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!_disposed)
+            {
+                if (disposing)
+                {
+                    _context.Dispose();
+                    // Dispose other managed resources.
+                }
+                //release unmanaged resources.
+            }
+            _disposed = true;
         }
     }
 }
