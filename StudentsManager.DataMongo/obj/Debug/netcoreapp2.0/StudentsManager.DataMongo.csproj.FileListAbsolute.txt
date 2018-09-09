@@ -1,9 +1,0 @@
-D:\My Git\Samples\dotnet\core\2.0\StudentsManager\StudentsManager.DataMongo\bin\Debug\netcoreapp2.0\StudentsManager.DataMongo.deps.json
-D:\My Git\Samples\dotnet\core\2.0\StudentsManager\StudentsManager.DataMongo\bin\Debug\netcoreapp2.0\StudentsManager.DataMongo.dll
-D:\My Git\Samples\dotnet\core\2.0\StudentsManager\StudentsManager.DataMongo\obj\Debug\netcoreapp2.0\StudentsManager.DataMongo.csprojAssemblyReference.cache
-D:\My Git\Samples\dotnet\core\2.0\StudentsManager\StudentsManager.DataMongo\obj\Debug\netcoreapp2.0\StudentsManager.DataMongo.csproj.CoreCompileInputs.cache
-D:\My Git\Samples\dotnet\core\2.0\StudentsManager\StudentsManager.DataMongo\obj\Debug\netcoreapp2.0\StudentsManager.DataMongo.AssemblyInfoInputs.cache
-D:\My Git\Samples\dotnet\core\2.0\StudentsManager\StudentsManager.DataMongo\obj\Debug\netcoreapp2.0\StudentsManager.DataMongo.AssemblyInfo.cs
-D:\My Git\Samples\dotnet\core\2.0\StudentsManager\StudentsManager.DataMongo\bin\Debug\netcoreapp2.0\StudentsManager.DataMongo.pdb
-D:\My Git\Samples\dotnet\core\2.0\StudentsManager\StudentsManager.DataMongo\obj\Debug\netcoreapp2.0\StudentsManager.DataMongo.dll
-D:\My Git\Samples\dotnet\core\2.0\StudentsManager\StudentsManager.DataMongo\obj\Debug\netcoreapp2.0\StudentsManager.DataMongo.pdb
