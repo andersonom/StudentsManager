@@ -1,0 +1,26 @@
+version: '3.4'
+
+services:
+  studentsmanager.api:
+    image: ${DOCKER_REGISTRY-}studentsmanagerapi
+    build:
+      context: .
+      dockerfile: StudentsManager.Api/Dockerfile
+    networks:
+      - studentsapi-network
+    depends_on:
+      - "db"
+
+  db:
+    image: microsoft/mssql-server-linux:2017-latest
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "VcDERqwfaDs4bkEHDJ1H"
+    ports:
+      - "1401:1433"
+    networks:
+      - studentsapi-network
+
+networks: 
+    studentsapi-network:
+      driver: bridge

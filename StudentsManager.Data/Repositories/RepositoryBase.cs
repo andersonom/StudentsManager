@@ -89,10 +89,25 @@ namespace StudentsManager.Data.Repositories
             //_context.Set<TEntity>().Remove(entity);
            await _context.SaveChangesAsync();
         }
-       
+
+        private bool disposed = false;
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!this.disposed)
+            {
+                if (disposing)
+                {
+                    _context.Dispose();
+                }
+            }
+            this.disposed = true;
+        }
+
         public void Dispose()
         {
-            throw new NotImplementedException();
+            Dispose(true);
+            GC.SuppressFinalize(this);
         }
     }
 }
