@@ -1,6 +1,7 @@
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.1-stretch-slim AS base
 WORKDIR /app
-EXPOSE 80
+ENV ASPNETCORE_URLS=http://+:8089
+EXPOSE 8089
 
 FROM mcr.microsoft.com/dotnet/core/sdk:2.1-stretch AS build
 WORKDIR /src

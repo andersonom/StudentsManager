@@ -5,7 +5,7 @@
     <DockerTargetOS>Linux</DockerTargetOS>
     <ProjectGuid>cdb7b717-f70d-4e7e-838b-e64e20f77d1b</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
-    <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/api/values</DockerServiceUrl>
+    <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/api/course</DockerServiceUrl>
     <DockerServiceName>studentsmanager.api</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>

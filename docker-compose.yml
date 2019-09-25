@@ -6,11 +6,12 @@ services:
     build:
       context: .
       dockerfile: StudentsManager.Api/Dockerfile
+    ports:
+      - 8089:8089
     networks:
-      - studentsapi-network
+      - students-network
     depends_on:
       - "db"
-
   db:
     image: microsoft/mssql-server-linux:2017-latest
     environment:
@@ -19,8 +20,8 @@ services:
     ports:
       - "1401:1433"
     networks:
-      - studentsapi-network
+      - students-network
 
 networks: 
-    studentsapi-network:
-      driver: bridge
+    students-network:
+      external: true
