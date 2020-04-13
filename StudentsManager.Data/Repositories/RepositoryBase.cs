@@ -8,7 +8,7 @@ using StudentsManager.Domain.Bases;
 
 namespace StudentsManager.Data.Repositories
 {
-    public class RepositoryBase<TEntity> : IDisposable, IRepositoryBase<TEntity> where TEntity : class
+    public class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where TEntity : class
     {
         protected StudentsManagerContext _context;
 
@@ -21,13 +21,7 @@ namespace StudentsManager.Data.Repositories
         {
             _context.Set<TEntity>().Add(obj);
             _context.SaveChanges();
-        }
-
-        public async Task AddAsync(TEntity obj)
-        {
-            await _context.Set<TEntity>().AddAsync(obj);
-            await _context.SaveChangesAsync();
-        }
+        }         
 
         public TEntity GetById(int id)
         {
@@ -70,44 +64,13 @@ namespace StudentsManager.Data.Repositories
             _context.SaveChanges();
         }
 
-        public async Task UpdateAsync(int id, TEntity obj)
-        {
-            TEntity entity = GetById(id);
-
-            if (entity != null)
-                _context.Entry(entity).CurrentValues.SetValues(obj);
-
-            _context.Entry(entity).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
-        }
-
-        public async Task Remove(int id)
+        public void Remove(int id)
         {
             TEntity entity = GetById(id);
             _context.Entry(entity).State = EntityState.Deleted; 
           
             //_context.Set<TEntity>().Remove(entity);
-           await _context.SaveChangesAsync();
-        }
-
-        private bool disposed = false;
-
-        protected virtual void Dispose(bool disposing)
-        {
-            if (!this.disposed)
-            {
-                if (disposing)
-                {
-                    _context.Dispose();
-                }
-            }
-            this.disposed = true;
-        }
-
-        public void Dispose()
-        {
-            Dispose(true);
-            GC.SuppressFinalize(this);
-        }
+            _context.SaveChanges();
+        }         
     }
 }

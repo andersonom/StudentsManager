@@ -1,14 +1,29 @@
-﻿using StudentsManager.Domain.Models;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+using StudentsManager.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace StudentsManager.Data
-{
-    public class DbInitializer
+{ 
+    public static class SeedData
     {
-        public async Task Initialize(StudentsManagerContext context)
+        public static IWebHost Seed(this IWebHost webhost)
+        {
+            using (var scope = webhost.Services.GetService<IServiceScopeFactory>().CreateScope())
+            {
+                // alternatively resolve UserManager instead and pass that if only think you want to seed are the users     
+                using (var dbContext = scope.ServiceProvider.GetRequiredService<StudentsManagerContext>())
+                {
+                    SeedData.SeedAsync(dbContext).GetAwaiter().GetResult();
+                }
+                return webhost;
+            }
+        }
+
+        public static async Task SeedAsync(StudentsManagerContext context)
         { 
             context.Database.EnsureCreated();
 

@@ -24,9 +24,9 @@ namespace StudentsManager.Api.Controllers
         }
 
         [HttpPut("{id}")]
-        public async void Put(int id, [FromBody]Address address)
+        public void Put(int id, [FromBody]Address address)
         {
-            await _addressRepository.UpdateAsync(id, address);
+            _addressRepository.Update(id, address);
         }
     }
 }

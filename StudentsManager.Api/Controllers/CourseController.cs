@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic; 
-using System.Threading.Tasks; 
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using StudentManager.Domain.Interfaces.Repositories; 
+using StudentManager.Domain.Interfaces.Repositories;
 using StudentsManager.Domain.Bases;
 using StudentsManager.Domain.Models;
 
@@ -47,16 +47,16 @@ namespace StudentsManager.Api.Controllers
 
         // POST: api/Course
         [HttpPost]
-        public async void Post([FromBody]Course course)
+        public void Post([FromBody]Course course)
         {
-            await _courseRepository.AddAsync(course);
+             _courseRepository.Add(course);
         }
 
         // PUT: api/Course/5
         [HttpPut("{id}")]
-        public async void Put(int id, [FromBody]Course course)
+        public void Put(int id, [FromBody]Course course)
         {
-            await _courseRepository.UpdateAsync(id, course);
+            _courseRepository.Update(id, course);
         }
 
         // DELETE: api/Course/5

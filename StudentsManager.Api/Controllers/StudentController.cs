@@ -40,16 +40,16 @@ namespace StudentsManager.Api.Controllers
 
         // POST: api/Student
         [HttpPost]
-        public async void Post([FromBody]Student student)
+        public void Post([FromBody]Student student)
         {
-            await _studentRepository.AddAsync(student);
+            _studentRepository.Add(student);
         }
 
         // PUT: api/Student/5
         [HttpPut("{id}")]
-        public async void Put(int id, [FromBody]Student student)
+        public void Put(int id, [FromBody]Student student)
         {
-            await _studentRepository.UpdateAsync(id, student);
+            _studentRepository.Update(id, student);
         }
 
         // DELETE: api/Student/5
